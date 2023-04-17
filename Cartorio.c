@@ -129,6 +129,7 @@ int main() // significa função principal, onde vai está rodando o núcleo do proj
 	    printf("\t1 - Registrar nomes\n");  
 	    printf("\t2 - Consultar nomes\n"); 
 	    printf("\t3 - Deletar nomes\n\n"); 
+	    printf("\t4 - Sair do sistema\n\n");
 	    printf("Opção: ");
 		//Fim do menu 
 	
@@ -150,6 +151,11 @@ int main() // significa função principal, onde vai está rodando o núcleo do proj
 		    deletar(); // chamada de funções 
 		    break; // significa quebra 
 		    
+		    case 4: // significa caso 
+		    printf("Obrigado por ultilizar o sistema!\n"); // significa trazer o texto para o usuário
+		    return 0; // sginifica retorna o valor zero e sair do sistema                                                              
+		    break; // significa quebra
+		     
 		    default: // default caso nemhuma conparação case seja verdadeira a estrutura executará a cláusula default 
 		    printf("Essa opção não está disponivel!\n"); // significa trazer o texto para o usuário 
 		    system("pause"); // responsavel por pausa o sistema até o usuário decidir 
